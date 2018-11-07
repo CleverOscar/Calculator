@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20% 20% 20% 20% 20%; 
     border: 2px solid #ffa94d;
     border-radius: 5px;
     background-color: #ffd8a8;
@@ -9,6 +10,7 @@ body {
 }
 
 .output {
+    justify-content: end;
     grid-column-start: 1;
     grid-column-end: 5;
     border: 2px solid #ffec99;
@@ -18,16 +20,17 @@ body {
 }
 
 div {
-    display: grid;
-    grid-template: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #ffec99;
     border-radius: 5px;
     background-color:#7cc47f;
-    padding: 1em;
+    padding: 1rem;
 }
 
-.equals {
-    grid-column-start: 4;
-    grid-row-start: 4;
-    grid-row-end: 6;
+.footnote {
+    grid-column: 1/5;
+    background-color: #ffec99;
+    padding: 0.1em;
 }
