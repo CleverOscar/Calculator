@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+
+.output {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 2px solid #ffec99;
+    border-radius: 5px;
+    background-color: #fff9db;
+    padding: 1em;
+}
+
+div {
+    display: grid;
+    grid-template: 1fr;
+    border: 2px solid #ffec99;
+    border-radius: 5px;
+    background-color:#7cc47f;
+    padding: 1em;
+}
+
+.equals {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
